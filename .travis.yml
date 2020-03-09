@@ -6,7 +6,7 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install pytest
-  - brew install libtorrent
+  - apt-get install python-libtorrent
 script:
   - py.test -v --color=yes --exitfirst --showlocals --durations=5
   - python b.py
