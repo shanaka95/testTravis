@@ -9,4 +9,4 @@ install:
 
 script:
   - py.test -v --color=yes --exitfirst --showlocals --durations=5
-  - python a.py
+  - python b.py
