@@ -5,11 +5,16 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - pip install pytest
-  - sudo apt-get install python-libtorrent
-  - sudo apt-get install deluge
-  - sudo apt-get install deluge-webui
-
+  - sudo apt-get install unzip
+  - wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/libtorrent/libtorrent-rasterbar-0.16.13.tar.gz
+  - tar -xvf libtorrent-rasterbar-0.16.13.tar.gz
+  - cd libtorrent-rasterbar-0.16.13
+  - ./configure --enable-python-binding
+  - make
+  - make install
+  - cd bindings/python
+  - python setup.py build
+  - python setup.py install
 script:
   - python b.py
   - ls
