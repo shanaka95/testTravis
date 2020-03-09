@@ -7,6 +7,8 @@ install:
   - pip install -r requirements.txt
   - pip install pytest
   - sudo apt-get install python-libtorrent
+  - sudo apt-get install deluge
+  - sudo apt-get install deluge-webui
 
 script:
   - python b.py
