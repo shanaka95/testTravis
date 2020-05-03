@@ -12,7 +12,7 @@ for i in os.listdir(os.getcwd()+"/downloads"):
 		print(os.getcwd()+"/downloads/"+i)
 		if os.path.isfile(os.getcwd()+"/downloads/"+i):
 			print("file")
-			upload = drive.CreateFile({'title': 'test.zip'})
+			upload = drive.CreateFile({'title': i})
 			upload.SetContentFile(os.getcwd()+"/downloads/"+i)
 			upload.Upload()
 			print ('uploade d')
