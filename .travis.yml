@@ -13,5 +13,5 @@ install:
   - 
 
 script:
-  - python up.py
+  - python ../up.py
   - ls
