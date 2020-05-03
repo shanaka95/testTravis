@@ -11,4 +11,4 @@ for i in os.listdir(os.getcwd()+"/downloads"):
 	upload = drive.CreateFile({'title': i})
 	upload.SetContentFile(os.getcwd()+"/downloads/"+i)
 	upload.Upload()
-	print ('uploaded')
+	print ('uploade d')
