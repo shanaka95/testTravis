@@ -2,7 +2,7 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 import os
 g_login = GoogleAuth()
-#g_login.LoadClientConfigFile("client_secrets.json");
+g_login.LoadClientConfigFile("client_secrets.json");
 #g_login.LocalWebserverAuth()
 g_login.CommandLineAuth()
 #g_login.Authorize()
