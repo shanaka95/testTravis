@@ -14,5 +14,5 @@ for i in os.listdir(os.getcwd()+"/downloads"):
 			upload.SetContentFile(os.getcwd()+"/downloads/"+i)
 			upload.Upload()
 			print ('uploade d')
-	except:
-		pass
+	except Exception as e:
+		print e
