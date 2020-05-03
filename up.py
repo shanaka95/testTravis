@@ -15,4 +15,4 @@ for i in os.listdir(os.getcwd()+"/downloads"):
 			upload.Upload()
 			print ('uploade d')
 	except Exception as e:
-		print e
+		print (e)
