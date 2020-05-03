@@ -9,7 +9,7 @@ g_login.CommandLineAuth()
 drive = GoogleDrive(g_login)
 for i in os.listdir(os.getcwd()+"/downloads"): 
 	try:
-		if os.path.isfile(os.getcwd()+"/downloads/"+i)
+		if os.path.isfile(os.getcwd()+"/downloads/"+i):
 			upload = drive.CreateFile({'title': i})
 			upload.SetContentFile(os.getcwd()+"/downloads/"+i)
 			upload.Upload()
